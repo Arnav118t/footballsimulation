@@ -1,0 +1,29 @@
+{
+  "name": "football-analytics-server",
+  "version": "1.0.0",
+  "description": "REST API + Socket.IO realtime engine for the Football Analytics Platform",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [
+    "football",
+    "analytics",
+    "monte-carlo",
+    "elo",
+    "poisson"
+  ],
+  "author": "CSE Project Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.0",
+    "socket.io": "^4.7.5"
+  }
+}
+

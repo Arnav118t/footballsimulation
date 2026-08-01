@@ -1,0 +1,103 @@
+body {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  min-height: 100vh;
+  color: #e9ecef;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.card-title {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.9rem;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4dd0e1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #adb5bd;
+}
+
+.form-control,
+.form-select {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e9ecef;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background: rgba(0, 0, 0, 0.35);
+  border-color: #ffc107;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.15);
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+}
+
+.table {
+  color: #e9ecef;
+}
+
+.table thead th {
+  color: #ffc107;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.badge-live {
+  background: #dc3545;
+  color: #fff;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.prob-bar {
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+.prob-home { background: #4dd0e1; }
+.prob-draw { background: #ced4da; }
+.prob-away { background: #ff8a65; }
+
+.btn-brand {
+  background: #ffc107;
+  color: #111;
+  font-weight: 600;
+  border: none;
+}
+.btn-brand:hover {
+  background: #ffb300;
+  color: #000;
+}
+

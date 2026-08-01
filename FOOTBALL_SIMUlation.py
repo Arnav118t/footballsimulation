@@ -127,7 +127,7 @@ def monte_carlo_prediction():
     if home == away:
         result_label.config(text="Home and Away cannot be same.")
         return
-    df = pd.read_csv("match_data.csv")
+    df = pd.read_csv("data/match_data.csv")
     team_avg = df.groupby('team')['team_goals'].mean()
     λ_home = team_avg.get(home, 1.2)
     λ_away = team_avg.get(away, 1.0)

@@ -1,0 +1,17 @@
+{
+  "name": "football-analytics-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack football analytics platform — React + Node + Flask + MongoDB",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "flask": "python flask_service.py",
+    "dev": "concurrently -n SERVER,CLIENT,FLASK -c green,cyan,magenta \"npm run server\" \"npm run client\" \"npm run flask\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
